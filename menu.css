@@ -1,0 +1,496 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.part1 {
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.bar {
+    background-color: rgb(0, 255, 255);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: rgb(255, 192, 91);
+    width: 100%;
+    font-family: 'Comfortaa', cursive;
+    
+
+}
+
+.bar img {
+    width: 25px;
+}
+
+#HOME {
+    margin-top: 5px;
+    color: black;
+    margin-left: 3px;
+}
+
+#SIGNUP {
+    margin-top: 5px;
+    color: black;
+}
+
+#LOGIN {
+    margin-top: 5px;
+    color: black;
+}
+
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: rgb(14, 179, 239);
+    width: 100%;
+    height: 180px;
+}
+
+#ghi {
+
+    margin-right: 300px;
+
+}
+
+#totoro {
+
+    margin-right: 0cm;
+    margin-left: 40%;
+    width: 150px;
+}
+
+.bar button {
+    background-color: transparent;
+    border: 0ch;
+    cursor: pointer;
+}
+
+.películas {
+
+    width: 100%;
+    min-height: 100px;
+    min-width: 150px;
+    max-width: 150px;
+    max-height: 200px;
+    margin-top: 210px;
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    background-color: aquamarine;
+    border-radius: 30px;
+    margin-bottom: 1%;
+    cursor: pointer;
+
+}
+
+.Pelicula1 {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d9ebf2;
+
+
+
+
+}
+
+.prof {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+    margin-left: 90px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+#imagenpain {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+
+
+
+}
+
+.descripcion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    font-family: 'Comfortaa', cursive;
+
+
+
+
+
+}
+
+.fav {
+
+
+    width: 30px;
+
+}
+
+#parte1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    /* Este div de aca es la barra donde esta "El viaje de chihiro(2001)" */
+
+
+
+
+}
+
+#parte2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(86, 86, 86, 0.126);
+    border-radius: 30px;
+    gap: 20px;
+
+}
+
+.descripcion1 img {
+    width: 40px;
+
+
+
+}
+
+#background {
+    background-color: rgb(12, 7, 37);
+    padding: 10px;
+    width: 100%;
+
+}
+
+.texto1 {
+
+
+    top: 900px;
+    left: 100px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.texto2 {
+
+
+    top: 400px;
+    left: 640px;
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+.despel {
+
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.edad {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    font-style: italic;
+
+}
+
+.des {
+
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    text-align: justify;
+
+}
+
+.elenco {
+
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    text-align: justify;
+
+}
+
+.duracion {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    text-align: justify;
+
+}
+
+#botón {
+
+    background-color: #f8c984;
+    border-radius: 10px;
+    border-color: white;
+
+
+}
+
+#pel {
+
+    background-color: transparent;
+    border-color: transparent;
+
+
+}
+
+
+.container {
+    background-color: rgb(233, 64, 64);
+    height: 600px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.imagenfea {
+
+    height: 700px;
+    margin-bottom: 20px;
+    position: absolute;
+    width: 100%;
+
+}
+
+#title {
+
+    color: rgb(255, 254, 254);
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 300%;
+
+
+}
+
+
+
+.serie1 {
+    width: 200px;
+    min-height: 100px;
+    min-width: 150px;
+    max-width: 150px;
+    max-height: 200px;
+
+}
+
+.rating {
+    width: 153px;
+}
+
+.save1 {
+    width: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: flex-end;
+    margin-left: 15px;
+    position: relative;
+
+}
+
+.played {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+
+
+}
+
+.saved {
+
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+
+
+}
+
+#butts {
+
+    height: 80px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: rgba(255, 207, 95, 0.564);
+    border: 0ch;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#butts p {
+    color: rgb(255, 207, 95);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#butts img {
+
+    height: 40px;
+    width: 40px;
+
+
+}
+
+#buttx {
+
+    height: 80px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: rgba(255, 207, 95, 0.564);
+    border: 0ch;
+    margin-top: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#butts:hover {
+    background-color: rgb(255, 192, 91);
+
+}
+
+#buttx:hover {
+    background-color: rgb(255, 192, 91);
+
+}
+
+
+#buttx img {
+
+    height: 40px;
+    width: 40px;
+
+}
+
+.container {
+    color: rgb(32, 213, 213);
+
+}
+
+.serie1 {
+
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    width: 20px;
+    border-radius: 10px;
+
+}
+
+.serie1 :hover {
+    transform: scale(1.025);
+
+}
+
+button {
+    display: block;
+}
+
+.pain {
+    padding: 10px;
+}
+
+
+.main {
+
+
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    margin-top: 670px;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Comfortaa', cursive;
+    
+   
+
+}
+
+.main2 {
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    color: white;
+    height: 300px;
+    margin-left: 10px;
+    font-family: 'Comfortaa', cursive;
+
+
+}
+
+.row {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+
+
+}
+
+.hambre {
+
+    background-color: rgb(15, 38, 60);
+
+}
+
+#descrip {
+
+    color: white;
+}
+
+.rating {
+
+
+    width: 145px;
+    margin-top: 3px;
+}
