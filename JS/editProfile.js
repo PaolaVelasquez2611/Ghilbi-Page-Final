@@ -62,20 +62,24 @@ function saveChanges(){
         user.name=nameUser.value
     }
     if(username.value!=''){
-        user.username=username.value
+        user.userName=username.value
     }
     if(imgURL.value!=''){
         user.img=imgURL.value
     }
     if(age.value!=''){
-        user.img=imgURL.value
+        user.age=age.value
     }
     if(bio.value!=''){
         user.bio=bio.value
     }
+    if(email.value!=''){
+        user.Email=email.value
+    }
     
     if(password.value!='' && passwordConf.value!='' && user.password==password.value ){
         alert('la contraseña se a cambiado con exito')
+        user.password=passwordConf.value
     }else if(password.value!='' && user.password!=password.value){
         alert('la contraseña no es correcta')
     }
