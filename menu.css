@@ -293,8 +293,7 @@
 #title {
 
     color: rgb(255, 254, 254);
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Titan One', cursive;
     font-size: 300%;
 
 
@@ -411,8 +410,9 @@
     display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(255, 255, 255);
-    width: 20px;
+    width: 200px;
     border-radius: 10px;
+    
 
 }
 
@@ -435,25 +435,53 @@ button {
 
     flex-direction: column;
     color: rgb(0, 0, 0);
+    margin-top: 30px;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Comfortaa', cursive;
+    overflow-x: scroll;
+    height: 250px;
+    
+   
+
+}
+.h1main {
+
+
+    flex-direction: column;
+    color: rgb(0, 0, 0);
     margin-top: 670px;
     color: white;
     margin-left: 10px;
     font-family: 'Comfortaa', cursive;
+    height: 10px;
     
-   
-
 }
 
 .main2 {
     flex-direction: column;
     color: rgb(0, 0, 0);
-    margin-top: 50px;
+    margin-top: 25px;
     color: white;
     height: 300px;
     margin-left: 10px;
     font-family: 'Comfortaa', cursive;
+    overflow-x: scroll;
+    height: 250px;
+
+}
+
+.h1main2 {
 
 
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    margin-top: 1px;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Comfortaa', cursive;
+    height: 10px;
+    
 }
 
 .row {
@@ -465,8 +493,9 @@ button {
 
 .content {
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
     color: white;
+    font-family: 'Comfortaa', cursive;
 }
 
 .options {
@@ -479,7 +508,7 @@ button {
 
 .hambre {
 
-    background-color: rgb(15, 38, 60);
+    background-color:rgb(23, 45, 67);
 
 }
 
@@ -493,4 +522,9 @@ button {
 
     width: 145px;
     margin-top: 3px;
+}
+
+#contenedorReco {
+    width: 100%;
+    
 }

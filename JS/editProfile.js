@@ -27,12 +27,12 @@ class User{
 function load(){
     loadCurrentUser()
     nameHolder.innerHTML=user.name
-    imgURL.placeholder=user.img
-    nameUser.placeholder= user.name
-    username.placeholder= user.userName
-    age.placeholder= user.age
-    bio.placeholder= user.bio
-    email.placeholder= user.Email
+    imgURL.value=user.img
+    nameUser.value= user.name
+    username.value= user.userName
+    age.value= user.age
+    bio.value= user.bio
+    email.value= user.Email
     img.src=user.img
     saveProfile.addEventListener('click',saveChanges)
 }

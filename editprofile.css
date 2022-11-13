@@ -221,10 +221,14 @@ font-family: 'Comfortaa', cursive;
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgb(0, 0, 0);
+    
     background-color: rgba(242, 169, 23, 0.501);
     font-size: medium;
 
 }
+::placeholder { 
+    color: rgb(0, 0, 0);
+  }
 
 #savemf {
 
