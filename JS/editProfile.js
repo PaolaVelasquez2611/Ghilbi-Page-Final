@@ -13,15 +13,21 @@ const saveProfile = document.getElementById('savemf')
 let user
 
 class User{
-    constructor(img,name,userName,age,bio, Email, password){
+    constructor(img,name,userName,age,bio, Email, password, favorites){
         this.img=img
         this.name=name
         this.userName=userName
         this.age=age
         this.bio=bio
         this.Email=Email
-        this.password=password 
+        this.password=password
+        this.favorites=favorites
     }
+
+    addFavorites(favorites) {
+        this.favorites=favorites
+    }
+    
 }
 
 function load(){

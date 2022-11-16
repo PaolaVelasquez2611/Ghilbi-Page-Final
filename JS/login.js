@@ -13,7 +13,9 @@ function logIn(){
     users.forEach((user)=>{
         if(user.userName == submitUser.value){
             if(user.password == password.value){
+                setCurrentUser(user)
                 alert('Bienvenido '+submitUser.value)
+                document.location.href = 'menu.html';
             }else{
                 alert('contraseña incorrecta')
             }
@@ -39,6 +41,11 @@ function displayUser() {
             console.log(user)
         })
     }
+}
+
+function setCurrentUser(user){
+    let json = JSON.stringify(user);
+    localStorage.setItem('currentUser', json);
 }
 
 window.addEventListener('load',loadLogin)

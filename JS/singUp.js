@@ -7,11 +7,21 @@ const submit=document.getElementById('submit')
 let users =[]
 
 class User{
-    constructor(userName, Email, password){
+    constructor(img,name,userName,age,bio, Email, password, favorites){
+        this.img=img
+        this.name=name
         this.userName=userName
-        this.Email = Email
-        this.password=password 
+        this.age=age
+        this.bio=bio
+        this.Email=Email
+        this.password=password
+        this.favorites=favorites
     }
+
+    addFavorites(favorites) {
+        this.favorites=favorites
+    }
+
 }
 
 function loadRegister(){
@@ -28,6 +38,7 @@ function loadUSers(){
 
 function displayUser() {
     if(users!=null){
+        console.log(users)
         users.forEach((user) => {
             console.log(user)
         })
@@ -47,9 +58,10 @@ function runForm(){
         alert('las contraseñas no son iguales')
     }else{
         alert('Se creo el user '+user)
-        let newUser = new User(user,email,password)
+        let newUser = new User(null,user,user,null,null,email,password,null)
         users.push(newUser);
         saveUsers()
+        document.location.href = 'Login.html';
     }
 }
 

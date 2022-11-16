@@ -17,6 +17,7 @@ const menu = document.getElementById('menu')
 let selectedMovie
 const localStorage = window.localStorage;
 const url = 'https://ghibliapi.herokuapp.com/films'
+let corruntUser
 
 
 class Peliplu {
@@ -72,6 +73,7 @@ let favorites = []
 
 async function loadPageUwU() {
     await getAllMovies();
+    loadUser()
     selectedMovie = recommended[0]
     idBanner.src = selectedMovie.fotoBanner
     title.innerHTML = selectedMovie.title
@@ -83,7 +85,6 @@ async function loadPageUwU() {
     director.innerHTML = selectedMovie.direct
     age.innerHTML = selectedMovie.pg
     saveFav.addEventListener('click', saveToFavorite)
-    loadFavoritos()
     play.addEventListener('click', playTrailer)
     let opciones
     recommended.forEach((peli) => {
@@ -111,14 +112,7 @@ async function loadPageUwU() {
 
 }
 
-function loadFavoritos() {
-    let savedFavorites = localStorage.getItem('favorites')
-    if (savedFavorites != null) {
-        favorites = JSON.parse(savedFavorites)
-        console.log(favorites)
-        displayFavorites()
-    }
-}
+
 
 function playTrailer() {
     window.open(selectedMovie.trailer);
@@ -130,8 +124,10 @@ function saveToFavorite() {
         if (favorites[i].id == selectedMovie.id) {
             found = true
             favorites.splice(i,1)
-            let json = JSON.stringify(favorites);
-            localStorage.setItem('favorites', json);
+            corruntUser.favorites=favorites
+            let json = JSON.stringify(corruntUser);
+            localStorage.setItem('currentUser', json);
+            saveUserInfo();
         }
     }
     if (found) {
@@ -140,8 +136,10 @@ function saveToFavorite() {
     } else {
         alert('The movie is now added to your favorites')
         favorites.push(selectedMovie)
-        let json = JSON.stringify(favorites);
-        localStorage.setItem('favorites', json);
+        corruntUser.favorites=favorites
+        let json = JSON.stringify(corruntUser);
+        localStorage.setItem('currentUser', json);
+        saveUserInfo();
     }
     displayFavorites()
 }
@@ -192,6 +190,41 @@ function yes(peliSelected) {
             age.innerHTML = trending[index].pg
         }
 
+    }
+
+}
+
+function loadUser(){
+    let data = localStorage.getItem('currentUser')
+    if(data!=null){
+        corruntUser = JSON.parse(data)
+        console.log(corruntUser)
+        favorites = corruntUser.favorites
+        if(favorites==null){
+            favorites=[]
+            corruntUser.favorites=[]
+        }
+        displayFavorites()
+    }
+}
+
+function saveUserInfo(){
+    let data = localStorage.getItem('users')
+    if(data!=null){
+        let users = JSON.parse(data)
+        let found =false;
+        users.forEach((user)=>{
+            if(user.userName == corruntUser.userName && !found){
+                console.log(user)
+                user.favorites=corruntUser.favorites
+                console.log('lo encuentra')
+                console.log(user)
+                console.log(users)
+                let json = JSON.stringify(users)
+                localStorage.setItem('users',json)
+                console.log(users)
+            }
+        })
     }
 
 }
