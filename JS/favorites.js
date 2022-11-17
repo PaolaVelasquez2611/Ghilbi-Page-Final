@@ -6,14 +6,18 @@ let favorites =[]
 let user
 
 function loadFavoritosOwO(){
-    let savedFavorites = localStorage.getItem('favorites')
+    console.log ('load')
+   // let savedFavorites = localStorage.getItem('favorites')//
     let currentUser = localStorage.getItem('currentUser')
-    if(savedFavorites!=null){
-        favorites = JSON.parse(savedFavorites)
+    console.log (currentUser)
+    if(currentUser!=null){
+        currentUser = JSON.parse(currentUser)
+        console.log (currentUser.favorites)
+        favorites = currentUser.favorites
     }
 
     if(currentUser!=null){
-        user = JSON.parse(currentUser)
+        user = currentUser
         nameHolder.innerHTML=user.name
         img.src=user.img
     }else{
