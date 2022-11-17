@@ -17,7 +17,7 @@ function loadFavoritosOwO(){
         nameHolder.innerHTML=user.name
         img.src=user.img
     }else{
-        nameHolder.innerHTML='Zharick'
+        nameHolder.innerHTML='No User Login'
         img.src='assets/image13.png'
     }
     displayFavorites()
