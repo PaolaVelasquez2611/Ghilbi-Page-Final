@@ -215,14 +215,9 @@ function saveUserInfo(){
         let found =false;
         users.forEach((user)=>{
             if(user.userName == corruntUser.userName && !found){
-                console.log(user)
                 user.favorites=corruntUser.favorites
-                console.log('lo encuentra')
-                console.log(user)
-                console.log(users)
                 let json = JSON.stringify(users)
                 localStorage.setItem('users',json)
-                console.log(users)
             }
         })
     }

@@ -92,6 +92,7 @@ function saveChanges(){
     let json = JSON.stringify(user);
     localStorage.setItem('currentUser', json);
     alert('Se han aplicado los cambios')
+    saveUserInfo()
     load()
 }
 
@@ -99,5 +100,42 @@ img.onerror =function() {
     alert('la foto ' + this.src+ 'no es valida, porfavor cambiela');
     img.src='assets/image13.png'
   };
+
+  function saveUserInfo(){
+    let data = localStorage.getItem('users')
+    if(data!=null){
+        let users = JSON.parse(data)
+        let found =false;
+        users.forEach((currentUsers)=>{
+            if(currentUsers.userName == user.userName && !found){
+                if(imgURL.value!=''){
+                    currentUsers.img=imgURL.value
+                }
+                if(nameUser.value!=''){
+                    currentUsers.name=nameUser.value
+                }
+                if(username.value!=''){
+                    currentUsers.userName=username.value
+                }
+                if(imgURL.value!=''){
+                    currentUsers.img=imgURL.value
+                }
+                if(age.value!=''){
+                    currentUsers.age=age.value
+                }
+                if(bio.value!=''){
+                    currentUsers.bio=bio.value
+                }
+                if(email.value!=''){
+                    currentUsers.Email=email.value
+                }
+                let json = JSON.stringify(users)
+                localStorage.setItem('users',json)
+            }
+        })
+        
+    }
+
+}
 
 window.addEventListener('load', load)
